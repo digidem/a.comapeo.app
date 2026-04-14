@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    /** Style taken from https://comapeo.app header */
+    html {
+      color: #fff;
+      background-color: #050f77;
+      background-image: url("https://cdn.prod.website-files.com/68b4cf5be38646b7c7aa2bba/68b5929e6a8af1081bdb6b89_d2f7d1a3a9c197133eeb0a1e370522be_1920%20x%201080%20Image.Background.png");
+      background-position: 50%;
+      background-size: cover;
+      font-family: Rubik, sans-serif;
+      font-size: 1.5rem;
+    }
+    #qr {
+      display: block;
+      margin: 0.5em auto;
+      width: 30vmin;
+      height: 30vmin;
+      /* Enables clean scaling for the QR code */
+      image-rendering: pixelated;
+    }
+    a {
+      color: #fff;
+    }
+    .co-span {
+      color: #f93;
+    }
+  </style>
+</head>
+<body>
+  <h1>Join <span class="co-span">Co</span>Mapeo</h1>
+  <section id="qr-info" style="display: none;">
+    <canvas id="qr"></canvas>
+    <p>
+      Scan this QR code to join or click <a id="link" href="">here</a> to open the app.
+    </p>
+    <p>
+      If you do not have the app installed, get it from our <a href="https://comapeo.app/download">downloads</a> page.
+    </p>
+  </section>
+  <section id="error-box" style="display: none;">
+    Invalid invite link, please check you got the right one and try again.
+  </section>
+  <script src="/bundle.js"></script>
+</body>
+</html>
