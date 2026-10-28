@@ -1,5 +1,5 @@
 # ensure folder exists
-mkdir build
+mkdir -p build
 # make bundle.js
 npm run build
 # copy over other source files (html, etc)
