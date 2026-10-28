@@ -1,14 +1,14 @@
 {
-  "name": "i.comapeo.app",
+  "name": "a.comapeo.app",
   "version": "1.0.0",
   "description": "Onboarding site for  inviting collaborators Comapeo over the internet",
-  "homepage": "https://github.com/digidem/i.comapeo.app#readme",
+  "homepage": "https://github.com/digidem/a.comapeo.app#readme",
   "bugs": {
-    "url": "https://github.com/digidem/i.comapeo.app/issues"
+    "url": "https://github.com/digidem/a.comapeo.app/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digidem/i.comapeo.app.git"
+    "url": "git+https://github.com/digidem/a.comapeo.app.git"
   },
   "license": "UNLICENSED",
   "author": "RangerMauve",
