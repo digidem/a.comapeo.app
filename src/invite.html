@@ -4,55 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR Code Generator</title>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    /** Style taken from https://comapeo.app header */
-    html {
-      color: #fff;
-      background-color: #050f77;
-      background-image: url("https://cdn.prod.website-files.com/68b4cf5be38646b7c7aa2bba/68b5929e6a8af1081bdb6b89_d2f7d1a3a9c197133eeb0a1e370522be_1920%20x%201080%20Image.Background.png");
-      background-position: 50%;
-      background-size: cover;
-      font-family: Rubik, sans-serif;
-      font-size: 1.5rem;
-    }
-    #qr {
-      display: block;
-      margin: 0.5em auto;
-      width: 30vmin;
-      height: 30vmin;
-      /* Enables clean scaling for the QR code */
-      image-rendering: pixelated;
-    }
-    a {
-      color: #fff;
-    }
-    .co-span {
-      color: #f93;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Join <span class="co-span">Co</span>Mapeo</h1>
+  <h1>Join this project <br/>using <span class="co-span">Co</span>Mapeo</h1>
   <section id="qr-info" style="display: none;">
-    <canvas id="qr"></canvas>
+     <a id="link" href=""><canvas id="qr"></canvas></a>
     <p>
-      Scan this QR code to join or click <a id="link" href="">here</a> to open the app.
+      <b>Scan QR code</b><br/>with a device using CoMapeo
     </p>
+    <p class="download-question">
+      Don't have CoMapeo?
+    </p>
+    <section class="downloads">
+    <img src="images/google.svg">
+    <img src="images/apple.svg">
+    </section>
+    <p class="download-or">or</p>
     <p>
-      If you do not have the app installed, get it from our <a href="https://comapeo.app/download">downloads</a> page.
+     <a class="download-apk" href="https://downloads.comapeo.app/android/release/latest">Download the Android APK</a>
     </p>
   </section>
   <section id="error-box" style="display: none;">
     Invalid invite link, please check you got the right one and try again.
   </section>
-  <script src="/bundle.js"></script>
+  <script src="bundle.js"></script>
 </body>
 </html>

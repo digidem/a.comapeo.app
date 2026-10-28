@@ -1,0 +1,48 @@
+/* Font loaded from comapeo.app header — see https://comapeo.app */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-foreground: #fff;
+  --color-background: #000033;
+  --color-accent: #FF9933;
+  --font-family: Rubik, sans-serif;
+  --font-size: 16px;
+  --qr-size: 120px;
+  --qr-radius: 10px;
+}
+/** Style taken from https://comapeo.app header */
+html {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  text-align: center;
+}
+#qr {
+  display: block;
+  margin: 0.5em auto;
+  border-radius: var(--qr-radius);
+  /* Enables clean scaling for the QR code */
+  image-rendering: pixelated;
+}
+a {
+  color: var(--color-foreground);
+}
+.co-span {
+  color: var(--color-accent);
+}
+h1 {
+  margin-top: 2em;
+}
+.download-question {
+  font-size: 12px;
+}
+.download-or {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.download-apk {
+  font-size: 12px;
+  color: var(--color-accent);
+  text-decoration: none;
+}

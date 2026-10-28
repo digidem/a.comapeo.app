@@ -31,7 +31,7 @@ async function loadCanvas(url) {
 
     show(qrInfoContainer)
     // Try loading the URL in the app instead
-    window.location.href = url;
+    //window.location.href = url;
   } catch (e) {
   show(errorBox)
     console.error(e);
