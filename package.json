@@ -16,8 +16,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.js --bundle --outfile=bundle.js --target=es2015",
-    "dev": "esbuild src/index.js --bundle --outfile=bundle.js --target=es2015 --watch",
+    "build": "esbuild src/index.js --bundle --outfile=build/bundle.js --target=es2015",
+    "dev": "esbuild src/index.js --bundle --outfile=build/bundle.js --target=es2015 --watch",
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
