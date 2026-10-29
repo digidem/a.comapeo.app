@@ -1,33 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code Generator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Join this project <br/>using <span class="co-span">Co</span>Mapeo</h1>
-  <section id="qr-info" style="display: none;">
-     <a id="link" href=""><canvas id="qr"></canvas></a>
-    <p>
-      <b>Scan QR code</b><br/>with a device using CoMapeo
-    </p>
-    <p class="download-question">
-      Don't have CoMapeo?
-    </p>
-    <section class="downloads">
-    <img src="images/google.svg">
-    <img src="images/apple.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join CoMapeo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Join this project <br />using <span class="co-span">Co</span>Mapeo</h1>
+    <section id="qr-info" style="display: none">
+      <a id="link" href=""><canvas id="qr"></canvas></a>
+      <p><b>Scan QR code</b><br />with a device using CoMapeo</p>
+      <p class="download-question">Don't have CoMapeo?</p>
+      <section class="downloads">
+        <img src="images/google.svg" />
+        <img src="images/apple.svg" />
+      </section>
+      <p class="download-or">or</p>
+      <p>
+        <a
+          class="download-apk"
+          href="https://downloads.comapeo.app/android/release/latest"
+          >Download the Android APK</a
+        >
+      </p>
     </section>
-    <p class="download-or">or</p>
-    <p>
-     <a class="download-apk" href="https://downloads.comapeo.app/android/release/latest">Download the Android APK</a>
-    </p>
-  </section>
-  <section id="error-box" style="display: none;">
-    Invalid invite link, please check you got the right one and try again.
-  </section>
-  <script src="bundle.js"></script>
-</body>
+    <section id="error-box" style="display: none">
+      Invalid invite link, please check you got the right one and try again.
+    </section>
+    <script src="bundle.js"></script>
+  </body>
 </html>
