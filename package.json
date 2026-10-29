@@ -1,0 +1,34 @@
+{
+  "name": "a.comapeo.app",
+  "version": "1.0.0",
+  "description": "Onboarding site for  inviting collaborators Comapeo over the internet",
+  "homepage": "https://github.com/digidem/a.comapeo.app#readme",
+  "bugs": {
+    "url": "https://github.com/digidem/a.comapeo.app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digidem/a.comapeo.app.git"
+  },
+  "license": "UNLICENSED",
+  "author": "RangerMauve",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.js --bundle --outfile=build/bundle.js --target=es2015",
+    "dev": "esbuild src/index.js --bundle --outfile=build/bundle.js --target=es2015 --watch",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "esbuild": "^0.20.0",
+    "prettier": "^3.8.2",
+    "typescript": "^6.0.2"
+  }
+}

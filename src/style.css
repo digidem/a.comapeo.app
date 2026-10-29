@@ -1,0 +1,82 @@
+/* Font loaded from comapeo.app header — see https://comapeo.app */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-foreground: #fff;
+  --color-background: #000033;
+  --color-accent: #ff9933;
+  --font-family: Rubik, sans-serif;
+  --font-size: 1.125rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --qr-size: 120px;
+  --qr-radius: 10px;
+}
+/** Style taken from https://comapeo.app header */
+html {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  text-align: center;
+}
+#qr {
+  display: block;
+  margin: 0.5em auto;
+  border-radius: var(--qr-radius);
+  /* Enables clean scaling for the QR code */
+  image-rendering: pixelated;
+}
+a {
+  color: var(--color-foreground);
+}
+.co-span {
+  color: var(--color-accent);
+}
+.comapeo-logo {
+  margin-top: 4em;
+}
+h1 {
+  margin-top: 2em;
+}
+.download-question {
+  font-size: var(--font-size-sm);
+}
+.download-or {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+}
+.download-or-spaced {
+  margin-top: 3em;
+}
+.download-apk {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.download-instructions {
+  font-size: var(--font-size-xs);
+  max-width: 230px;
+  display: inline-block;
+  text-align: start;
+  padding: 0px;
+}
+.download-instructions li {
+  margin: 0.5em 0em;
+}
+.download-button {
+  margin: 0em 0.1em;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+}

@@ -1,2 +1,3 @@
-# i.comapeo.app
-Onboarding site for  inviting collaborators Comapeo over the internet
+# a.comapeo.app
+
+Onboarding site for inviting collaborators Comapeo over the internet

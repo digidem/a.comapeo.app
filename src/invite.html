@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join CoMapeo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      class="comapeo-logo"
+      src="images/comapeo.svg"
+      alt="CoMapeo logo, blue square with Co in orange and Mapeo in white."
+    />
+    <h1 class="desktop-only">
+      Join this project <br />using <span class="co-span">Co</span>Mapeo
+    </h1>
+    <h2 class="mobile-only">Download CoMapeo <br />to get started</h2>
+    <section id="qr-info" style="display: none">
+      <section class="desktop-only">
+        <a id="link" href=""><canvas id="qr"></canvas></a>
+        <p><b>Scan QR code</b><br />with a device using CoMapeo</p>
+        <p class="download-question">Don't have CoMapeo?</p>
+      </section>
+      <section class="mobile-only">
+        <ol class="download-instructions">
+          <li>Download via Google Play Store or Apple App Store</li>
+          <li>Set up device using CoMapeo</li>
+          <li>Return to invite Link and try again</li>
+        </ol>
+      </section>
+      <section class="downloads">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.comapeo&pcampaignid=web_share"
+          class="download-button"
+        >
+          <img src="images/google.svg" alt="Get CoMapeo on Google Play" />
+        </a>
+        <a href="https://comapeo.app/download" class="download-button">
+          <img
+            class="download-button"
+            src="images/apple.svg"
+            alt="Get CoMapeo on the Apple App Store"
+          />
+        </a>
+      </section>
+      <p class="download-or desktop-only">or</p>
+      <p class="download-or download-or-spaced mobile-only">
+        Additional option:
+      </p>
+      <p>
+        <a
+          class="download-apk"
+          href="https://downloads.comapeo.app/android/release/latest"
+          >Download the Android APK</a
+        >
+      </p>
+    </section>
+    <section id="error-box" style="display: none">
+      Invalid invite link, please check you got the right one and try again.
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>
